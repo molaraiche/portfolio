@@ -283,9 +283,18 @@ header .burger div {
   flex-direction: column;
   justify-content: center;
   width: 40%;
+  background-color: #adedffe8;
+  padding: 20px;
+  border-radius: 60px 0px 60px 0px;
+  margin-left: 50px;
 }
 .contactform .sociale img {
-  width: 80px;
+  width: 50px;
+  margin: 10px 20px;
+}
+.contactform .sociale h3 {
+  color: black;
+  margin: 10px 0px;
 }
 .contactform .socialHolder {
   display: flex;
