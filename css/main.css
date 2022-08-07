@@ -11,7 +11,8 @@ a {
   font-weight: 600;
 }
 .box {
-  background: url("../images/background.png") scroll no-repeat;
+  background: url("../images/background.png") scroll no-repeat center
+    center/cover;
   font-family: var(--ubuntoFont);
 }
 .head {
@@ -125,7 +126,8 @@ header .burger div {
 }
 #about h1,
 #skills h1,
-#projects h1 {
+#projects h1,
+#contact h1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -219,4 +221,74 @@ header .burger div {
 
 #projects a {
   display: none;
+}
+
+.contactform {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+.formandimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactform form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contactform .form-grp {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.contactform .form-grp input,
+.contactform .form-grp textarea {
+  padding: 10px;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid var(--mainColor);
+  resize: vertical;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 550;
+}
+.contactform .form-grp input:focus,
+.contactform .form-grp textarea:focus {
+  outline: none;
+}
+
+.contactform .form-btn {
+  width: 100%;
+}
+.contactform .formandimg {
+  width: 60%;
+}
+.contactform .form-btn input {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: 2px solid var(--mainColor);
+  color: #fff;
+  cursor: pointer;
+}
+.contactform .sociale {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+.contactform .sociale img {
+  width: 80px;
+}
+.contactform .socialHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
