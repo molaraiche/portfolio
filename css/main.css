@@ -124,7 +124,8 @@ header .burger div {
   width: 100%;
 }
 #about h1,
-#skills h1 {
+#skills h1,
+#projects h1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,4 +215,8 @@ header .burger div {
   transform: scale(1.1);
   transition: 1s;
   cursor: pointer;
+}
+
+#projects a {
+  display: none;
 }
