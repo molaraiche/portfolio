@@ -14,6 +14,10 @@ a {
   background: url("../images/background.png") scroll no-repeat;
   font-family: var(--ubuntoFont);
 }
+.head {
+  background-color: #3c768700;
+  height: 10vh;
+}
 header {
   display: flex;
   align-items: center;
@@ -83,6 +87,8 @@ header .burger div {
 }
 #home div div h1 {
   font-size: 70px;
+  background-color: #adedff57;
+  width: fit-content;
 }
 .hireme {
   display: flex;
@@ -107,6 +113,7 @@ header .burger div {
 .titleColor {
   color: var(--mainColor);
   margin: 15px;
+  background-color: #adedff57;
 }
 /*About*/
 .aboutContent {
