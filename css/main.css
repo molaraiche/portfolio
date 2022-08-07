@@ -65,7 +65,7 @@ header .burger div {
 #skills,
 #projects,
 #contact {
-  height: 100vh;
+  min-height: 100vh;
   color: #fff;
 }
 #home {
@@ -123,7 +123,8 @@ header .burger div {
   justify-content: space-between;
   width: 100%;
 }
-#about h1 {
+#about h1,
+#skills h1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,6 +149,9 @@ header .burger div {
   align-items: center;
   justify-content: center;
 }
+#about .resumeHolder {
+  width: 100%;
+}
 #about div a {
   text-decoration: none;
   color: #fff;
@@ -157,9 +161,52 @@ header .burger div {
   align-items: center;
   justify-content: center;
   margin: 80px 10px;
-  width: 30%;
+  width: 60%;
 }
 #about div a:hover {
   background-color: var(--secondaryColor);
   color: black;
+}
+#skills div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#skills div div img {
+  max-width: 150px;
+  min-width: 60px;
+  width: 100%;
+  height: auto;
+}
+#skills div .skillscontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+#skills .skillsHolder {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#skills .basics {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#skills .basics img {
+  margin: 0 20px;
+}
+#skills .libraries {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
