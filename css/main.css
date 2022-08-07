@@ -7,6 +7,9 @@
 html {
   scroll-behavior: smooth;
 }
+a {
+  font-weight: 600;
+}
 .box {
   background: url("../images/background.png") scroll no-repeat;
   font-family: var(--ubuntoFont);
@@ -59,12 +62,12 @@ header .burger div {
 #projects,
 #contact {
   height: 100vh;
+  color: #fff;
 }
 #home {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
 }
 
 #home div div h2 {
@@ -102,6 +105,58 @@ header .burger div {
   width: 40%;
 }
 #home div a:hover {
+  background-color: var(--secondaryColor);
+  color: black;
+}
+.titleColor {
+  color: var(--mainColor);
+  margin: 15px;
+}
+/*About*/
+.aboutContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+#about h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  height: 30vh;
+  font-family: var(--UrbanistFont);
+  letter-spacing: 30px;
+  font-style: italic;
+}
+#about p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  width: 100%;
+  padding: 0 10%;
+  line-height: 2rem;
+  font-style: italic;
+}
+#about div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about div a {
+  text-decoration: none;
+  color: #fff;
+  border: 3px solid var(--mainColor);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 10px;
+  width: 30%;
+}
+#about div a:hover {
   background-color: var(--secondaryColor);
   color: black;
 }
