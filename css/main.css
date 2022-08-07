@@ -173,7 +173,7 @@ header .burger div {
   justify-content: center;
 }
 
-#skills div div img {
+#skills .skillsHolder img {
   max-width: 150px;
   min-width: 60px;
   width: 100%;
@@ -201,7 +201,7 @@ header .burger div {
   justify-content: space-between;
   width: 100%;
 }
-#skills .basics img {
+#skills .skillsHolder img {
   margin: 0 20px;
 }
 #skills .libraries {
@@ -209,4 +209,9 @@ header .burger div {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+#skills .skillsHolder img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  cursor: pointer;
 }
