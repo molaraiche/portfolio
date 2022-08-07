@@ -33,7 +33,7 @@ header a {
   color: var(--secondaryColor);
   font-weight: 600;
 }
-header ul li {
+li {
   list-style: none;
 }
 header button {
@@ -59,4 +59,49 @@ header .burger div {
 #projects,
 #contact {
   height: 100vh;
+}
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+#home div div h2 {
+  font-size: 46px;
+  text-align: left;
+  margin: 5px 0px;
+}
+
+#home div div p {
+  font-size: 30px;
+  letter-spacing: 20px;
+  font-family: var(--UrbanistFont);
+  text-align: center;
+  margin-left: 10px;
+}
+#home div div h1 {
+  font-size: 70px;
+  text-align: right;
+}
+.hireme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#home div a {
+  text-decoration: none;
+  color: #fff;
+  border: 3px solid var(--mainColor);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 10px;
+  width: 40%;
+}
+#home div a:hover {
+  background-color: var(--secondaryColor);
+  color: black;
 }
