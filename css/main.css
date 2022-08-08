@@ -170,11 +170,13 @@ header .burger div {
   background-color: var(--secondaryColor);
   color: black;
 }
+#skills {
+  margin: 40px 0px;
+}
 #skills div {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30px 0px;
 }
 
 #skills .skillsHolder img {
