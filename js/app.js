@@ -4,7 +4,7 @@ const closeMenu = document.querySelector(".closeMenu");
 
 /**/
 let width = 696;
-if (screen.availWidth === width) {
+if (screen.availWidth <= width) {
   burger.onclick = () => {
     list.style.transform = "translateX(0)";
     burger.style.display = "none";
