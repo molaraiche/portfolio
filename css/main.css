@@ -18,18 +18,18 @@ a {
 .head {
   background-color: #3c768700;
   height: 10vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 5%;
 }
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 10vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 0 15%;
 }
 header ul {
   display: flex;
@@ -159,12 +159,12 @@ header .burger div {
   text-decoration: none;
   color: #fff;
   border: 3px solid var(--mainColor);
-  padding: 30px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 80px 10px;
-  width: 60%;
+  width: 40%;
 }
 #about div a:hover {
   background-color: var(--secondaryColor);
@@ -177,7 +177,7 @@ header .burger div {
 }
 
 #skills .skillsHolder img {
-  max-width: 150px;
+  max-width: 100px;
   min-width: 60px;
   width: 100%;
   height: auto;
@@ -195,13 +195,13 @@ header .burger div {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-direction: column;
   flex-wrap: wrap;
 }
 #skills .basics {
   display: flex;
   align-content: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
 }
 #skills .skillsHolder img {
@@ -211,8 +211,10 @@ header .burger div {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
 }
+
 #skills .skillsHolder img:hover {
   transform: scale(1.1);
   transition: 1s;
@@ -311,6 +313,8 @@ label a {
   filter: blur(0px);
   cursor: pointer;
 }
+/*Conctact */
+
 .contactform {
   display: flex;
   align-items: center;
@@ -388,4 +392,82 @@ label a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* responsive*/
+@media (max-width: 924px) {
+  #about h1,
+  #skills h1,
+  #projects h1,
+  #contact h1 {
+    font-size: 30px;
+    padding: 0 5%;
+    letter-spacing: 10px;
+  }
+  #contact .contactform {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 696px) {
+  .head .burger {
+    display: block;
+  }
+  .head ul {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+    background-color: var(--secondaryColor);
+    width: 100%;
+    transform: translateX(-120%);
+  }
+  .head ul li a {
+    color: #333;
+  }
+  #home div div h1 {
+    font-size: 50px;
+  }
+  #home .hireme a {
+    font-size: 12px;
+  }
+  .contactform .formandimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20%;
+    width: 100%;
+  }
+  .formandimg img {
+    display: none;
+  }
+  .contactform .sociale {
+    width: 100%;
+  }
+  .prjcts {
+    padding: 0 10%;
+  }
+}
+@media (max-width: 578px) {
+  .skillscontent {
+    flex-direction: row;
+  }
+}
+@media (max-width: 457px) {
+  #home div div h1 {
+    width: 70%;
+    font-size: 30px;
+  }
+  #home .hireme a {
+    padding: 10px;
+  }
+}
+@media (max-width: 411px) {
 }
