@@ -31,7 +31,7 @@ header {
   justify-content: space-between;
   height: 10vh;
 }
-header ul {
+header .list {
   display: flex;
   width: 50%;
   justify-content: space-around;
@@ -49,7 +49,7 @@ header button {
   border: none;
   color: var(--secondaryColor);
 }
-header .burger {
+.burger {
   display: none;
   cursor: pointer;
 }
@@ -60,6 +60,13 @@ header .burger div {
   padding: 2px;
   background-color: var(--mainColor);
   border-radius: 3px;
+}
+.closeMenu {
+  display: none;
+  color: var(--mainColor);
+  font-weight: 800;
+  font-size: 24px;
+  margin-right: 10px;
 }
 #home,
 #about,
@@ -105,7 +112,7 @@ header .burger div {
   align-items: center;
   justify-content: center;
   margin: 80px 10px;
-  width: 20%;
+  width: 30%;
 }
 #home div a:hover {
   background-color: var(--secondaryColor);
@@ -417,7 +424,8 @@ label a {
   .head .burger {
     display: block;
   }
-  .head ul {
+
+  .head .list {
     position: absolute;
     top: 10vh;
     right: 0;
@@ -427,9 +435,9 @@ label a {
     align-items: center;
     justify-content: space-around;
     height: 90vh;
-    background-color: var(--secondaryColor);
+    background-color: #adedffa3;
     width: 100%;
-    transform: translateX(-120%);
+    transform: translateX(100%);
   }
   .head ul li a {
     color: #333;
