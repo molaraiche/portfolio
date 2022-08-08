@@ -1,6 +1,7 @@
 const burger = document.querySelector("header .burger");
 const list = document.querySelector(".list");
 const closeMenu = document.querySelector(".closeMenu");
+const links = document.querySelector(".list li a");
 
 /**/
 let width = 696;
@@ -22,3 +23,6 @@ if (screen.availWidth <= width) {
 } else {
   console.log("not done");
 }
+links.onclick = () => {
+  list.style.transform = "translateX(100%)";
+};
