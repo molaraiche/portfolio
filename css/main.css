@@ -401,7 +401,6 @@ label a {
   #projects h1,
   #contact h1 {
     font-size: 30px;
-    padding: 0 5%;
     letter-spacing: 10px;
   }
   #contact .contactform {
@@ -435,9 +434,7 @@ label a {
   #home div div h1 {
     font-size: 50px;
   }
-  #home .hireme a {
-    font-size: 12px;
-  }
+
   .contactform .formandimg {
     display: flex;
     align-items: center;
@@ -454,10 +451,19 @@ label a {
   .prjcts {
     padding: 0 10%;
   }
+  .contactform .sociale {
+    margin-left: 0;
+  }
 }
 @media (max-width: 578px) {
   .skillscontent {
     flex-direction: row;
+  }
+  #about h1,
+  #skills h1,
+  #projects h1,
+  #contact h1 {
+    font-size: 25px;
   }
 }
 @media (max-width: 457px) {
@@ -470,4 +476,47 @@ label a {
   }
 }
 @media (max-width: 411px) {
+  #home div div p {
+    font-size: 20px;
+    letter-spacing: 20px;
+    font-family: var(--UrbanistFont);
+    margin: 20px 0px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .hireme a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 280px) {
+  #home div a {
+    width: 45%;
+  }
+  #home div div p {
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-family: var(--UrbanistFont);
+    margin: 20px 0px;
+    margin-left: 20px;
+  }
+
+  #about h1,
+  #skills h1,
+  #projects h1,
+  #contact h1 {
+    font-size: 14px;
+  }
+  #skills .skillsHolder {
+    flex-wrap: nowrap;
+    width: 60px;
+    margin: 120px;
+  }
+  #skills div {
+    margin: 0px 20px;
+  }
+  #skills .skillsHolder img {
+    margin: 40px 0px;
+  }
 }
