@@ -4,17 +4,21 @@
   --mainColor: #73e1ff;
   --secondaryColor: #adedff;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 a {
   font-weight: 600;
 }
+
 .box {
-  background: url("../images/background.png") scroll no-repeat center
+  background: url("../assets/background.png") scroll no-repeat center
     center/cover;
   font-family: var(--ubuntoFont);
 }
+
 .head {
   background-color: #3c768700;
   height: 10vh;
@@ -25,34 +29,41 @@ a {
   left: 0;
   padding: 0 5%;
 }
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 10vh;
 }
+
 header .list {
   display: flex;
   width: 50%;
   justify-content: space-around;
 }
+
 header a {
   text-decoration: none;
   color: var(--secondaryColor);
   font-weight: 600;
 }
+
 li {
   list-style: none;
 }
+
 header button {
   background: none;
   border: none;
   color: var(--secondaryColor);
 }
+
 .burger {
   display: none;
   cursor: pointer;
 }
+
 header .burger div {
   width: 35px;
   height: 3px;
@@ -61,6 +72,7 @@ header .burger div {
   background-color: var(--mainColor);
   border-radius: 3px;
 }
+
 .closeMenu {
   display: none;
   color: var(--mainColor);
@@ -68,6 +80,7 @@ header .burger div {
   font-size: 24px;
   margin-right: 10px;
 }
+
 #home,
 #about,
 #skills,
@@ -76,11 +89,13 @@ header .burger div {
   min-height: 100vh;
   color: #fff;
 }
+
 #home {
   display: flex;
   align-items: center;
   justify-content: left;
 }
+
 #home div div h2 {
   font-size: 46px;
   margin: 5px 0px;
@@ -93,16 +108,19 @@ header .burger div {
   margin: 20px 0px;
   margin-left: 20px;
 }
+
 #home div div h1 {
   font-size: 70px;
   background-color: #adedff57;
   width: fit-content;
 }
+
 .hireme {
   display: flex;
   align-items: center;
   width: 100%;
 }
+
 #home div a {
   text-decoration: none;
   color: #fff;
@@ -114,15 +132,18 @@ header .burger div {
   margin: 80px 10px;
   width: 30%;
 }
+
 #home div a:hover {
   background-color: var(--secondaryColor);
   color: black;
 }
+
 .titleColor {
   color: var(--mainColor);
   margin: 15px;
   background-color: #adedff57;
 }
+
 /*About*/
 .aboutContent {
   display: flex;
@@ -131,6 +152,7 @@ header .burger div {
   justify-content: space-between;
   width: 100%;
 }
+
 #about h1,
 #skills h1,
 #projects h1,
@@ -144,6 +166,7 @@ header .burger div {
   letter-spacing: 30px;
   font-style: italic;
 }
+
 #about p {
   display: flex;
   align-items: center;
@@ -154,14 +177,17 @@ header .burger div {
   line-height: 2rem;
   font-style: italic;
 }
+
 #about div {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 #about .resumeHolder {
   width: 100%;
 }
+
 #about div a {
   text-decoration: none;
   color: #fff;
@@ -173,13 +199,16 @@ header .burger div {
   margin: 80px 10px;
   width: 40%;
 }
+
 #about div a:hover {
   background-color: var(--secondaryColor);
   color: black;
 }
+
 #skills {
   margin: 40px 0px;
 }
+
 #skills div {
   display: flex;
   align-items: center;
@@ -192,6 +221,7 @@ header .burger div {
   width: 100%;
   height: auto;
 }
+
 #skills div .skillscontent {
   display: flex;
   align-items: center;
@@ -199,6 +229,7 @@ header .burger div {
   flex-direction: column;
   width: 100%;
 }
+
 #skills .skillsHolder {
   height: 70vh;
   width: 100%;
@@ -207,6 +238,7 @@ header .burger div {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 #skills .basics {
   display: flex;
   align-content: center;
@@ -214,9 +246,11 @@ header .burger div {
   flex-wrap: wrap;
   width: 100%;
 }
+
 #skills .skillsHolder img {
   margin: 0 20px;
 }
+
 #skills .libraries {
   display: flex;
   align-items: center;
@@ -230,6 +264,7 @@ header .burger div {
   transition: 1s;
   cursor: pointer;
 }
+
 .prjcts .seeAll {
   color: #fff;
   font-family: var(--UrbanistFont);
@@ -246,11 +281,13 @@ header .burger div {
   animation-timing-function: ease-in-out;
   animation-direction: alternate;
 }
+
 @keyframes show {
   to {
     color: var(--mainColor);
   }
 }
+
 .prjcts .seeAll:hover {
   color: var(--mainColor);
 }
@@ -259,6 +296,7 @@ header .burger div {
   background-color: #73e1ff;
   width: 60%;
 }
+
 .projectsHolder {
   display: flex;
   align-items: center;
@@ -267,24 +305,28 @@ header .burger div {
   height: 70vh;
   width: 100%;
 }
+
 .partOne {
   display: flex;
   width: 100%;
   height: 40vh;
   color: #fff;
 }
+
 .partOne .r {
   margin-right: 5px;
   width: 60%;
   position: relative;
   cursor: pointer;
 }
+
 .projectsHolder .partOne .l {
   background-color: var(--secondaryColor);
   width: 40%;
   position: relative;
   cursor: pointer;
 }
+
 .partTwo {
   display: flex;
   align-items: center;
@@ -296,12 +338,14 @@ header .burger div {
   position: relative;
   color: #fff;
 }
+
 .partOne .r:hover,
 .partOne .l:hover,
 .partTwo:hover {
   transform: scale(1.1);
   transition: 1s;
 }
+
 .partOne label,
 .partTwo label {
   position: absolute;
@@ -314,15 +358,18 @@ header .burger div {
   align-items: center;
   justify-content: center;
 }
+
 label a {
   text-decoration: none;
   color: #fff;
 }
+
 .partOne label:hover,
 .partTwo label:hover {
   filter: blur(0px);
   cursor: pointer;
 }
+
 /*Conctact */
 
 .contactform {
@@ -331,11 +378,13 @@ label a {
   justify-content: space-between;
   height: 100vh;
 }
+
 .formandimg {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .contactform form {
   display: flex;
   align-items: center;
@@ -361,6 +410,7 @@ label a {
   color: #fff;
   font-weight: 550;
 }
+
 .contactform .form-grp input:focus,
 .contactform .form-grp textarea:focus {
   outline: none;
@@ -369,9 +419,11 @@ label a {
 .contactform .form-btn {
   width: 100%;
 }
+
 .contactform .formandimg {
   width: 60%;
 }
+
 .contactform .form-btn input {
   width: 100%;
   padding: 10px;
@@ -380,6 +432,7 @@ label a {
   color: #fff;
   cursor: pointer;
 }
+
 .contactform .sociale {
   display: flex;
   align-items: center;
@@ -390,14 +443,18 @@ label a {
   border-radius: 60px 0px 60px 0px;
   margin-left: 50px;
 }
-.contactform .sociale img {
-  width: 50px;
+
+.contactform .sociale svg {
+  font-size: 40px;
+  color: var(--mainColor);
   margin: 10px 20px;
 }
+
 .contactform .sociale h3 {
   color: black;
   margin: 10px 0px;
 }
+
 .contactform .socialHolder {
   display: flex;
   align-items: center;
@@ -413,6 +470,7 @@ label a {
     font-size: 30px;
     letter-spacing: 10px;
   }
+
   #contact .contactform {
     flex-direction: column;
     align-items: center;
@@ -439,9 +497,11 @@ label a {
     width: 100%;
     transform: translateX(100%);
   }
+
   .head ul li a {
     color: #333;
   }
+
   #home div div h1 {
     font-size: 50px;
   }
@@ -453,23 +513,29 @@ label a {
     padding: 0 20%;
     width: 100%;
   }
+
   .formandimg img {
     display: none;
   }
+
   .contactform .sociale {
     width: 100%;
   }
+
   .prjcts {
     padding: 0 10%;
   }
+
   .contactform .sociale {
     margin-left: 0;
   }
 }
+
 @media (max-width: 578px) {
   .skillscontent {
     flex-direction: row;
   }
+
   #about h1,
   #skills h1,
   #projects h1,
@@ -477,15 +543,18 @@ label a {
     font-size: 25px;
   }
 }
+
 @media (max-width: 457px) {
   #home div div h1 {
     width: 70%;
     font-size: 30px;
   }
+
   #home .hireme a {
     padding: 10px;
   }
 }
+
 @media (max-width: 411px) {
   #home div div p {
     font-size: 20px;
@@ -495,6 +564,7 @@ label a {
     margin-left: 20px;
   }
 }
+
 @media (max-width: 375px) {
   .hireme a {
     font-size: 10px;
@@ -505,6 +575,7 @@ label a {
   #home div a {
     width: 45%;
   }
+
   #home div div p {
     font-size: 20px;
     letter-spacing: 10px;
@@ -519,14 +590,17 @@ label a {
   #contact h1 {
     font-size: 14px;
   }
+
   #skills .skillsHolder {
     flex-wrap: nowrap;
     width: 60px;
     margin: 120px;
   }
+
   #skills div {
     margin: 0px 20px;
   }
+
   #skills .skillsHolder img {
     margin: 40px 0px;
   }
