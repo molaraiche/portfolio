@@ -1,4 +1,11 @@
+import { useState } from "react";
+import "../styles/NavBar.css";
 const NavBar = () => {
+  const [burger, setBurger] = useState("");
+  const burgerStyle = {
+    transform: "translateX(0%)",
+  };
+  const burgerHandler = () => setBurger(burger === "" ? burgerStyle : "");
   return (
     <section className="head">
       <div className="container">
@@ -6,7 +13,7 @@ const NavBar = () => {
           <a href="#home">
             <h1>molaraiche</h1>
           </a>
-          <ul className="list">
+          <ul style={{ burger }} className="list">
             <li>
               <a href="#about">About</a>
             </li>
@@ -21,7 +28,7 @@ const NavBar = () => {
             </li>
           </ul>
 
-          <div className="burger">
+          <div className="burger" onClick={burgerHandler}>
             <div></div>
             <div></div>
             <div></div>

@@ -1,0 +1,94 @@
+:root {
+  --ubuntoFont: "Ubuntu", sans-serif;
+  --UrbanistFont: "Urbanist", sans-serif;
+  --mainColor: #73e1ff;
+  --secondaryColor: #adedff;
+}
+.contactform {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.formandimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactform form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contactform .form-grp {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.contactform .form-grp input,
+.contactform .form-grp textarea {
+  padding: 10px;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid var(--mainColor);
+  resize: vertical;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 550;
+}
+
+.contactform .form-grp input:focus,
+.contactform .form-grp textarea:focus {
+  outline: none;
+}
+
+.contactform .form-btn {
+  width: 100%;
+}
+
+.contactform .formandimg {
+  width: 60%;
+}
+
+.contactform .form-btn input {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: 2px solid var(--mainColor);
+  color: #fff;
+  cursor: pointer;
+}
+
+.contactform .sociale {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding: 20px;
+  border-radius: 60px 0px 60px 0px;
+  margin-left: 50px;
+}
+
+.contactform .sociale svg {
+  font-size: 40px;
+  color: var(--mainColor);
+  margin: 10px 20px;
+}
+
+.contactform .sociale h3 {
+  color: black;
+  margin: 10px 0px;
+}
+
+.contactform .socialHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

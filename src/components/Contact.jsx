@@ -1,6 +1,7 @@
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import "../styles/Contact.css";
 const Contact = () => {
   return (
     <section id="contact">

@@ -1,3 +1,4 @@
+import "../styles/Home.css";
 const Home = () => {
   return (
     <section id="home">
@@ -8,8 +9,12 @@ const Home = () => {
           <h1>Frontend Developer.</h1>
         </div>
         <div className="hireme">
-          <a href="#contact" rel="noreferrer">Hire me</a>
-          <a href="#projects" rel="noreferrer">Projects</a>
+          <a href="#contact" rel="noreferrer">
+            Hire me
+          </a>
+          <a href="#projects" rel="noreferrer">
+            Projects
+          </a>
         </div>
       </div>
     </section>

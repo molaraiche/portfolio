@@ -1,0 +1,59 @@
+:root {
+  --ubuntoFont: "Ubuntu", sans-serif;
+  --UrbanistFont: "Urbanist", sans-serif;
+  --mainColor: #73e1ff;
+  --secondaryColor: #adedff;
+}
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+#home div div h2 {
+  font-size: 46px;
+  margin: 5px 0px;
+}
+
+#home div div p {
+  font-size: 30px;
+  letter-spacing: 20px;
+  font-family: var(--UrbanistFont);
+  margin: 20px 0px;
+  margin-left: 20px;
+}
+
+#home div div h1 {
+  font-size: 70px;
+  background-color: #adedff57;
+  width: fit-content;
+}
+
+.hireme {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#home div a {
+  text-decoration: none;
+  color: #fff;
+  border: 3px solid var(--mainColor);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 10px;
+  width: 30%;
+}
+
+#home div a:hover {
+  background-color: var(--secondaryColor);
+  color: black;
+}
+
+.titleColor {
+  color: var(--mainColor);
+  margin: 15px;
+  background-color: #adedff57;
+}

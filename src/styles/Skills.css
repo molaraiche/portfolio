@@ -1,0 +1,65 @@
+:root {
+  --ubuntoFont: "Ubuntu", sans-serif;
+  --UrbanistFont: "Urbanist", sans-serif;
+  --mainColor: #73e1ff;
+  --secondaryColor: #adedff;
+}
+#skills {
+  margin: 40px 0px;
+}
+
+#skills div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#skills .skillsHolder img {
+  max-width: 100px;
+  min-width: 60px;
+  width: 100%;
+  height: auto;
+}
+
+#skills div .skillscontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#skills .skillsHolder {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#skills .basics {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#skills .skillsHolder img {
+  margin: 0 20px;
+}
+
+#skills .libraries {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#skills .skillsHolder img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  cursor: pointer;
+}

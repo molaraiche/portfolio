@@ -1,0 +1,110 @@
+:root {
+  --ubuntoFont: "Ubuntu", sans-serif;
+  --UrbanistFont: "Urbanist", sans-serif;
+  --mainColor: #73e1ff;
+  --secondaryColor: #adedff;
+}
+.prjcts .seeAll {
+  color: #fff;
+  font-family: var(--UrbanistFont);
+  text-decoration: none;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  font-style: italic;
+  margin: 10px 0px;
+  font-size: 22px;
+  animation-name: show;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes show {
+  to {
+    color: var(--mainColor);
+  }
+}
+
+.prjcts .seeAll:hover {
+  color: var(--mainColor);
+}
+
+.projectsHolder .partOne .r {
+  background-color: #73e1ff;
+  width: 60%;
+}
+
+.projectsHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+  width: 100%;
+}
+
+.partOne {
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  color: #fff;
+}
+
+.partOne .r {
+  margin-right: 5px;
+  width: 60%;
+  position: relative;
+  cursor: pointer;
+}
+
+.projectsHolder .partOne .l {
+  background-color: var(--secondaryColor);
+  width: 40%;
+  position: relative;
+  cursor: pointer;
+}
+
+.partTwo {
+  display: flex;
+  align-items: center;
+  height: 30vh;
+  background-color: var(--mainColor);
+  width: 100%;
+  margin: 5px 0px;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+}
+
+.partOne .r:hover,
+.partOne .l:hover,
+.partTwo:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.partOne label,
+.partTwo label {
+  position: absolute;
+  filter: blur(5px);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.partOne label:hover,
+.partTwo label:hover {
+  filter: blur(0px);
+  cursor: pointer;
+}
