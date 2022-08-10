@@ -38,7 +38,15 @@
     height: 90vh;
     background-color: #adedffa3;
     width: 100%;
+  }
+  #close {
     transform: translateX(100%);
+    transition: 1s;
+  }
+
+  #open {
+    transform: translateX(0%);
+    transition: 1s;
   }
 
   .head ul li a {
