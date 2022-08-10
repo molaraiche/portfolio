@@ -37,8 +37,7 @@ const Skills = () => {
               src={require("../assets/skills/redux.svg").default}
               alt="redux"
             />
-
-            <img src={require("../assets/skills/cy.svg").default} alt="cy" />
+            <img src={require("../assets/skills/cy.svg").default} alt="" />
           </div>
         </div>
       </div>
