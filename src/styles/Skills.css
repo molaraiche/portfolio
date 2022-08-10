@@ -4,19 +4,32 @@
   --mainColor: #73e1ff;
   --secondaryColor: #adedff;
 }
-#skills {
+#skills .skillscontent {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-#skills .skillsHolder {
-  display: inline-grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  text-align: center;
-  column-gap: 30px;
-  row-gap: 30px;
+  flex-direction: column;
   width: 100%;
 }
+#skills .skillsHolder {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 70vh;
+}
 #skills .skillsHolder img {
-  width: 100px;
+  max-width: 100px;
+  width: fit-content;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+#skills .skillsHolder img:hover {
+  transform: scale(2.2);
+  transition: 1s;
+  cursor: pointer;
 }

@@ -4,7 +4,13 @@
   --mainColor: #73e1ff;
   --secondaryColor: #adedff;
 }
-
+#about h1,
+#skills h1,
+#projects h1,
+#contact h1 {
+  font-size: 60px;
+  letter-spacing: 10px;
+}
 @media (max-width: 924px) {
   #about h1,
   #skills h1,
@@ -147,17 +153,10 @@
   #contact h1 {
     font-size: 8px;
   }
+}
 
+@media (max-width: 762px) {
   #skills .skillsHolder {
-    width: 60px;
-    margin: 120px;
-  }
-
-  #skills div {
-    margin: 0px 20px;
-  }
-
-  #skills .skillsHolder img {
-    margin: 40px 0px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
