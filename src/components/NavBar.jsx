@@ -22,16 +22,44 @@ const NavBar = () => {
           </a>
           <ul id={nav} className="list">
             <li>
-              <a href="#about">About</a>
+              <a
+                onClick={() => {
+                  setNav("close");
+                }}
+                href="#about"
+              >
+                About
+              </a>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <a
+                onClick={() => {
+                  setNav("close");
+                }}
+                href="#skills"
+              >
+                Skills
+              </a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a
+                onClick={() => {
+                  setNav("close");
+                }}
+                href="#projects"
+              >
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a
+                onClick={() => {
+                  setNav("close");
+                }}
+                href="#contact"
+              >
+                Contact
+              </a>
             </li>
           </ul>
 

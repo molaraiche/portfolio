@@ -8,7 +8,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100vh;
 }
 
 .formandimg {
@@ -53,24 +52,32 @@
 }
 
 .contactform .formandimg {
-  width: 60%;
+  width: 80%;
 }
-
+.contactform .form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+}
 .contactform .form-btn input {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   background: none;
   border: 2px solid var(--mainColor);
   color: #fff;
   cursor: pointer;
 }
-
+.contactform .form-btn input:hover {
+  background-color: var(--mainColor);
+  color: #333;
+}
 .contactform .sociale {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
+  width: 20%;
   padding: 20px;
   border-radius: 60px 0px 60px 0px;
   margin-left: 50px;
