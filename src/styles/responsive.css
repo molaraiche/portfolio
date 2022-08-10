@@ -44,12 +44,11 @@
     height: 90vh;
     background-color: #adedfffc;
     border-radius: 5px 0px 0 5px;
+    transition: 1s;
     width: 100%;
   }
   #close {
     transform: translateX(100%);
-    transition-delay: 2s;
-    transition: 1s;
   }
 
   #open {
