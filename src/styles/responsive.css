@@ -117,6 +117,12 @@
 }
 
 @media (max-width: 375px) {
+  #about h1,
+  #skills h1,
+  #projects h1,
+  #contact h1 {
+    font-size: 18px;
+  }
   .hireme a {
     font-size: 10px;
   }
@@ -143,7 +149,6 @@
   }
 
   #skills .skillsHolder {
-    flex-wrap: nowrap;
     width: 60px;
     margin: 120px;
   }

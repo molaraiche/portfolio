@@ -28,14 +28,17 @@
   flex-direction: column;
   width: 100%;
 }
-
+#skills {
+  margin: 150px 0px;
+}
 #skills .skillsHolder {
   height: 70vh;
-  width: 100%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 20px 0px;
 }
 
 #skills .basics {
