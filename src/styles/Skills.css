@@ -29,7 +29,7 @@
   margin: 20px;
 }
 #skills .skillsHolder img:hover {
-  transform: scale(2.2);
+  transform: scale(1.1);
   transition: 1s;
   cursor: pointer;
 }
