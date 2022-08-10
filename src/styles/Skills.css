@@ -5,64 +5,21 @@
   --secondaryColor: #adedff;
 }
 #skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 40px 0px;
 }
-
-#skills div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#skills .skillsHolder img {
-  max-width: 100px;
-  min-width: 60px;
-  width: 100%;
-  height: auto;
-}
-
-#skills div .skillscontent {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-}
-#skills {
-  margin: 150px 0px;
-}
 #skills .skillsHolder {
-  height: 70vh;
-  width: 60%;
   display: flex;
   align-items: center;
+  height: 70vh;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 20px 0px;
 }
-
-#skills .basics {
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
 #skills .skillsHolder img {
-  margin: 0 20px;
-}
-
-#skills .libraries {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  max-width: 100px;
   width: 100%;
-}
-
-#skills .skillsHolder img:hover {
-  transform: scale(1.1);
-  transition: 1s;
-  cursor: pointer;
+  height: auto;
+  margin: 0 20px;
 }
