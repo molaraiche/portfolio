@@ -1,15 +1,23 @@
 import { useState } from "react";
 import "../styles/NavBar.css";
-const NavBar = () => {
+const NavBar = ({ upBtn, setUpBtn }) => {
   const [nav, setNav] = useState("close");
   const [colorChanger, setColorChanger] = useState("nothing");
-  const navHandler = () => setNav(nav === "close" ? "open" : "close");
+  const navHandler = () => {
+    setNav(
+      nav === "close"
+        ? "open" && setUpBtn("hideBtn")
+        : "close" || setUpBtn("showBtn")
+    );
+  };
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 100) {
       setColorChanger("colorize");
+      setUpBtn("showBtn");
     } else {
       setColorChanger("nothing");
+      setUpBtn("hideBtn");
     }
   };
   window.addEventListener("scroll", changeNavbarColor);

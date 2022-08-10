@@ -44,14 +44,12 @@
 .partOne .r {
   margin-right: 5px;
   width: 60%;
-  position: relative;
   cursor: pointer;
 }
 
 .projectsHolder .partOne .l {
   background-color: var(--mainColor);
   width: 40%;
-  position: relative;
   cursor: pointer;
 }
 
@@ -63,33 +61,5 @@
   width: 100%;
   margin: 5px 0px;
   cursor: pointer;
-  position: relative;
   color: #fff;
-}
-
-.partOne label,
-.partTwo label {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #222;
-}
-
-label a {
-  text-decoration: none;
-  color: var(--mainColor);
-}
-
-.partOne label:hover,
-.partTwo label:hover {
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.4);
-  transition: 2s;
-  cursor: pointer;
 }

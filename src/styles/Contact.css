@@ -10,12 +10,6 @@
   justify-content: space-between;
 }
 
-.formandimg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .contactform form {
   display: flex;
   align-items: center;
@@ -40,6 +34,7 @@
   border-radius: 5px;
   color: #fff;
   font-weight: 550;
+  font-size: 18px;
 }
 
 .contactform .form-grp input:focus,

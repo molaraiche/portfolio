@@ -1,3 +1,9 @@
+:root {
+  --ubuntoFont: "Ubuntu", sans-serif;
+  --UrbanistFont: "Urbanist", sans-serif;
+  --mainColor: #73e1ff;
+  --secondaryColor: #adedff;
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -69,3 +75,30 @@ input[type="number"] {
 }
 
 /* ALL COPYRIGHT RESERVED For molaraiche, Please consider to let this comment in the field for reserving my right in creating this file, i hope he help everyone use it  , happy coding */
+
+.backtotopholder {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.backtotopholder svg {
+  text-decoration: none;
+  color: #222;
+  font-size: 50px;
+  background-color: var(--mainColor);
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  top: 85vh;
+  right: 20vh;
+}
+
+#showBtn {
+  display: flex;
+}
+
+#hideBtn {
+  display: none;
+}

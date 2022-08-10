@@ -45,7 +45,6 @@
     background-color: #adedfffc;
     border-radius: 5px 0px 0 5px;
     width: 100%;
-    z-index: 4;
   }
   #close {
     transform: translateX(100%);
@@ -88,6 +87,9 @@
 
   .contactform .sociale {
     margin-left: 0;
+  }
+  .backtotopholder svg {
+    right: 5vh;
   }
 }
 
