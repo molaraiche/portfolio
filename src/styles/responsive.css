@@ -45,6 +45,7 @@
     background-color: #adedfffc;
     border-radius: 5px 0px 0 5px;
     width: 100%;
+    z-index: 4;
   }
   #close {
     transform: translateX(100%);

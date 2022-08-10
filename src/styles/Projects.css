@@ -14,17 +14,6 @@
   font-style: italic;
   margin: 10px 0px;
   font-size: 22px;
-  animation-name: show;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-}
-
-@keyframes show {
-  to {
-    color: var(--mainColor);
-  }
 }
 
 .prjcts .seeAll:hover {
@@ -41,7 +30,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
- 
+  height: 70vh;
   width: 100%;
 }
 
@@ -60,7 +49,7 @@
 }
 
 .projectsHolder .partOne .l {
-  background-color: var(--secondaryColor);
+  background-color: var(--mainColor);
   width: 40%;
   position: relative;
   cursor: pointer;
@@ -78,17 +67,10 @@
   color: #fff;
 }
 
-.partOne .r:hover,
-.partOne .l:hover,
-.partTwo:hover {
-  transform: scale(1.1);
-  transition: 1s;
-}
-
 .partOne label,
 .partTwo label {
   position: absolute;
-  filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0);
   top: 0;
   right: 0;
   bottom: 0;
@@ -96,15 +78,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #222;
 }
 
 label a {
   text-decoration: none;
-  color: #fff;
+  color: var(--mainColor);
 }
 
 .partOne label:hover,
 .partTwo label:hover {
-  filter: blur(0px);
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 2s;
   cursor: pointer;
 }
