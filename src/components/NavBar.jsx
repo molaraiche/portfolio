@@ -2,9 +2,19 @@ import { useState } from "react";
 import "../styles/NavBar.css";
 const NavBar = () => {
   const [nav, setNav] = useState("close");
+  const [colorChanger, setColorChanger] = useState("nothing");
   const navHandler = () => setNav(nav === "close" ? "open" : "close");
+
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 100) {
+      setColorChanger("colorize");
+    } else {
+      setColorChanger("nothing");
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
   return (
-    <section className="head">
+    <section id={colorChanger} className="head">
       <div className="container">
         <header>
           <a href="#home">
