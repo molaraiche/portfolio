@@ -2,22 +2,27 @@ import emailjs from "@emailjs/browser";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import swal from "sweetalert";
+
 import "../styles/Contact.css";
+import { useState } from "react";
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm("gmail", "molaraichemail", e.target, "wSBTaHlmVvLcwkP0O")
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm("gmail", "molaraichemail", e.target, "wSBTaHlmVvLcwkP0O");
+    swal(
+      "Good job!",
+      "Your message has been sent i will reply in average of 24h!",
+      "success"
+    );
+    setName("");
+    setEmail("");
+    setMessage("");
   };
+
   return (
     <section id="contact">
       <div className="container">
@@ -33,7 +38,9 @@ const Contact = () => {
                 type="text"
                 name="name"
                 id="name"
+                value={name}
                 placeholder="Your Name"
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className="form-grp">
@@ -42,7 +49,9 @@ const Contact = () => {
                 type="email"
                 name="email"
                 id="email"
+                value={email}
                 placeholder="Your email adress"
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="form-grp">
@@ -51,8 +60,10 @@ const Contact = () => {
                 placeholder="Write a message"
                 name="message"
                 id="message"
+                value={message}
                 cols="30"
                 rows="10"
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
             <div className="form-btn">
