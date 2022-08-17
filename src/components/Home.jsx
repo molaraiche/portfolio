@@ -1,4 +1,4 @@
-import "../styles/Home.css";
+import "../styles/Home.min.css";
 const Home = () => {
   return (
     <section id="home">

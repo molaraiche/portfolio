@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../styles/Projects.css";
+import "../styles/Projects.min.css";
 import Project from "./Project";
 
 const Projects = () => {

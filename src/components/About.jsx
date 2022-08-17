@@ -1,4 +1,4 @@
-import "../styles/About.css";
+import "../styles/About.min.css";
 const Resume =
   "https://docs.google.com/document/d/1PNry00BPJiiTifceuNoXLSrXOHdL_QZ-y3Tr8ESjhcc/edit?usp=sharing";
 const About = () => {

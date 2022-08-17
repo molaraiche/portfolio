@@ -4,7 +4,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import swal from "sweetalert";
 
-import "../styles/Contact.css";
+import "../styles/Contact.min.css";
 import { useState } from "react";
 const Contact = () => {
   const [name, setName] = useState("");

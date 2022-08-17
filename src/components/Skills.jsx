@@ -1,4 +1,4 @@
-import "../styles/Skills.css";
+import "../styles/Skills.min.css";
 
 const Skills = () => {
   return (

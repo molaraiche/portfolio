@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/NavBar.css";
+import "../styles/NavBar.min.css";
 const NavBar = ({ upBtn, setUpBtn }) => {
   const [nav, setNav] = useState("close");
   const [colorChanger, setColorChanger] = useState("nothing");
