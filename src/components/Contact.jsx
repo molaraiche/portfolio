@@ -1,8 +1,23 @@
+import emailjs from "@emailjs/browser";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "../styles/Contact.css";
 const Contact = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("gmail", "molaraichemail", e.target, "wSBTaHlmVvLcwkP0O")
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <section id="contact">
       <div className="container">
@@ -11,19 +26,31 @@ const Contact = () => {
         </h1>
 
         <div className="contactform">
-          <form action="">
+          <form onSubmit={sendEmail}>
             <div className="form-grp">
-              <input required type="text" placeholder="Your Name" />
+              <input
+                required
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name"
+              />
             </div>
             <div className="form-grp">
-              <input required type="email" placeholder="Your email adress" />
+              <input
+                required
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email adress"
+              />
             </div>
             <div className="form-grp">
               <textarea
                 required
                 placeholder="Write a message"
-                name=""
-                id=""
+                name="message"
+                id="message"
                 cols="30"
                 rows="10"
               ></textarea>

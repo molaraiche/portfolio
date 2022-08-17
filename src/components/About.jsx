@@ -1,4 +1,6 @@
 import "../styles/About.css";
+const Resume =
+  "https://docs.google.com/document/d/1PNry00BPJiiTifceuNoXLSrXOHdL_QZ-y3Tr8ESjhcc/edit?usp=sharing";
 const About = () => {
   return (
     <section id="about">
@@ -8,14 +10,14 @@ const About = () => {
             <span className="titleColor">Background</span> info
           </h1>
           <p>
-            Self-taught front end developer since Jan 2020, working with react
-            JS, HTML & CSS vanilla JavaScript, using a lot of React ecosystems
-            such as Redux, router, fetching data from API's and work with teams
-            to make nice and fast web apps. I'm targeting to stick with front
-            end development and be a talented front end Engineer.
+            Self-taught front end developer since Jan 2021, working with react
+            JS, HTML & CSS vanilla JavaScript, using React ecosystems such as
+            Redux, router, fetching data from API's and work with teams to make
+            nice and fast web apps. I'm targeting to stick with front end
+            development and be a talented front end Engineer.
           </p>
           <div className="resumeHolder">
-            <a href="https://google.com" rel="noreferrer">
+            <a href={Resume} target="_blank" alt="Resume" rel="noreferrer">
               Resume
             </a>
           </div>
