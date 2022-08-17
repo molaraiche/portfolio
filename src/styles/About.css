@@ -1,3 +1,9 @@
+:root {
+  --ubuntoFont: "Ubuntu", sans-serif;
+  --UrbanistFont: "Urbanist", sans-serif;
+  --mainColor: #73e1ff;
+  --secondaryColor: #adedff;
+}
 .aboutContent {
   display: flex;
   align-items: center;

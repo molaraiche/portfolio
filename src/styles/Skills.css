@@ -21,6 +21,7 @@
 }
 #skills .skillsHolder img {
   max-width: 100px;
+  width: -moz-fit-content;
   width: fit-content;
   height: auto;
   display: flex;

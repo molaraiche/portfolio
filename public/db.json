@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "poster": "./projects_images/CRUD_APP.png",
+    "project": "CRUD APP",
+    "Details": {
+      "detailOne": "React",
+      "detailTwo": "Material UI",
+      "detailThree": "Firebase"
+    },
+    "code": "https://github.com/molaraiche/firebase-crud-app",
+    "live": "https://crudapp.molaraiche.vercel.app/"
+  },
+  {
+    "id": 2,
+    "poster": "./projects_images/portfolio.png",
+    "project": "Portfolio",
+    "Details": {
+      "detailOne": "React",
+      "detailTwo": "Material UI ",
+      "detailThree": "Firebase"
+    },
+    "code": "https://github.com/molaraiche/portfolio",
+    "live": "https://molaraiche.vercel.app/"
+  }
+]
