@@ -22,5 +22,17 @@
     },
     "code": "https://github.com/molaraiche/portfolio",
     "live": "https://molaraiche.vercel.app/"
+  },
+  {
+    "id": 3,
+    "poster": "./projects_images/movie_app.png",
+    "project": "Portfolio",
+    "Details": {
+      "detailOne": "React",
+      "detailTwo": "Fetching Data from connected API",
+      "detailThree": "Material UI & YARN "
+    },
+    "code": "https://github.com/molaraiche/netfilm-react-app",
+    "live": "https://netfilm.molaraiche.vercel.app/"
   }
 ]
