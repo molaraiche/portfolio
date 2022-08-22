@@ -34,5 +34,29 @@
     },
     "code": "https://github.com/molaraiche/netfilm-react-app",
     "live": "https://netfilm.molaraiche.vercel.app/"
+  },
+  {
+    "id": 4,
+    "poster": "./projects_images/guess.png",
+    "project": "Guess my number",
+    "Details": {
+      "detailOne": "Html & Css",
+      "detailTwo": "JavaScript"
+    },
+    "code": "https://github.com/molaraiche/vanilla-js-guess-my-number",
+    "live": "https://molaraiche-guess.vercel.app/"
+  }
+  ,
+  {
+    "id": 5,
+    "poster": "./projects_images/todo.png",
+    "project": "TO-DO APP",
+    "Details": {
+      "detailOne": "Html & Css",
+      "detailTwo": "JavaScript",
+      "detailThree": "Fontawesome"
+    },
+    "code": "https://github.com/molaraiche/vanila-js-todo-app",
+    "live": "https://molaraiche-todo-app.vercel.app/"
   }
 ]
