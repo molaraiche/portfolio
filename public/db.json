@@ -26,7 +26,7 @@
   {
     "id": 3,
     "poster": "./projects_images/movie_app.png",
-    "project": "Portfolio",
+    "project": "MOVIE APP",
     "Details": {
       "detailOne": "React",
       "detailTwo": "Fetching Data from connected API",
@@ -45,8 +45,7 @@
     },
     "code": "https://github.com/molaraiche/vanilla-js-guess-my-number",
     "live": "https://molaraiche-guess.vercel.app/"
-  }
-  ,
+  },
   {
     "id": 5,
     "poster": "./projects_images/todo.png",
