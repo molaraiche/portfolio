@@ -17,7 +17,6 @@ const style = {
   p: 4,
 };
 const projectStyle = {
-  backgroundColor: "blue",
   height: "auto",
   width: "500px",
   display: "flex",
@@ -54,15 +53,13 @@ const Project = ({
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
+        aria-describedby="modal-modal-description">
         <Box sx={style}>
           <div
             style={{
               display: "flex",
               justifyContent: "flex-end",
-            }}
-          >
+            }}>
             <button
               onClick={handleClose}
               style={{
@@ -70,8 +67,7 @@ const Project = ({
                 border: "none",
                 padding: "15px",
                 cursor: "pointer",
-              }}
-            >
+              }}>
               X
             </button>
           </div>
@@ -81,8 +77,7 @@ const Project = ({
             fontWeight={600}
             id="modal-modal-title"
             variant="h6"
-            component="h2"
-          >
+            component="h2">
             {project}
           </Typography>
           <ProjectHolder

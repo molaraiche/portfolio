@@ -7,7 +7,6 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 const App = () => {
-  
   const [upBtn, setUpBtn] = useState("hideBtn");
   const topHandler = () => {
     window.scrollTo({
