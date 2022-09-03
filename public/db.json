@@ -57,5 +57,16 @@
     },
     "code": "https://github.com/molaraiche/vanila-js-todo-app",
     "live": "https://molaraiche-todo-app.vercel.app/"
+  },
+  {
+    "id": 6,
+    "poster": "./projects_images/SPS.png",
+    "project": "SPS GAME",
+    "Details": {
+      "detailOne": "Html & Css",
+      "detailTwo": "JavaScript"
+    },
+    "code": "https://github.com/molaraiche/SPS",
+    "live": "https://sps-molaraiche.vercel.app/"
   }
 ]
